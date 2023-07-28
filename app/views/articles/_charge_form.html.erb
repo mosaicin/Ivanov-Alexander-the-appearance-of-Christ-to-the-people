@@ -1,0 +1,12 @@
+<%= label_tag :card_number, "Credit Card Number" %>
+<%= text_field_tag :card_number, nil, placeholder: "4242 4242 4242 4242" %>
+
+<%= label_tag :card_expiry, "Expiration Date" %>
+<%= text_field_tag :card_expiry, nil, placeholder: "MM / YY" %>
+
+<%= label_tag :card_cvv, "CVV" %>
+<%= text_field_tag :card_cvv, nil, placeholder: "123" %>
+
+<%= hidden_field_tag :amount, @amount %>
+
+<%= submit_tag "Pay", class: "btn btn-primary" %>
